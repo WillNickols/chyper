@@ -10,7 +10,7 @@ authors:
     orcid: 0000-0001-8214-9746
     affiliation: 1
 affiliations:
- - name: William Nickols, Undergraduate Researcher, Harvard College
+ - name: William Nickols, Harvard College
    index: 1
 date: 20 May 2022
 bibliography: paper.bib
@@ -19,7 +19,7 @@ bibliography: paper.bib
 
 # Summary
 
-Machine learning classification methods often attempt to assign labels to a new data point from a set of possible labels.  When multiple classification tools assign different sets of labels to the same data point and the correct classification is unknown, it can be unclear whether the overlapping labels in the assignments are a reflection of the data point's true label or simply a convergence by chance.  To answer this question, `chyper` is an R[@rmanual] package for working with conditional hypergeometric distributions, distributions describing the number of overlapping labels due to chance when $n$ sets of labels are assigned by $n$ classification tools.  In this framework, classification tool $i$ has a population of labels in its database with size $n_i$ not shared among all tools, a population of labels with size $s$ shared in the databases of all tools, and a sample size of $m_i$ representing how many labels it assigned to a data point.
+Machine learning classification methods often attempt to assign labels to a new data point from a set of possible labels.  When multiple classification tools assign different sets of labels to the same data point and the correct classification is unknown, it can be unclear whether the overlapping labels in the assignments are a reflection of the data point's true properties or simply a convergence by chance.  To answer this question, `chyper` is an R[@rmanual] package (available [here](https://cran.r-project.org/package=chyper)) for working with conditional hypergeometric distributions, distributions describing the number of overlapping labels due to chance when $n$ sets of labels are assigned by $n$ classification tools.  In this framework, classification tool $i$ has a population of labels in its database with size $n_i$ not shared among all tools, a population of labels with size $s$ shared in the databases of all tools, and a sample size of $m_i$ representing how many labels it assigned to a data point.
 
 # Statement of need
 
