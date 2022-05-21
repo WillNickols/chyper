@@ -58,6 +58,6 @@ This holds for any level; that is, multiplying $P(X_i=x_i|X_{i-1}=x_{i-1})$ by $
 
 # Acknowledgements
 
-I’d like to thank Srihari Ganesh and Skyler Wu for their help in reviewing and improving the two-population case; Max Li for his help in optimizing the PMF calculation; and Meghan Short and Kelsey Thompson from the Huttenhower Lab at the Harvard T.H. Chan School School of Public Health and the Broad Institute for their help in reviewing the math behind the arbitrary-population-number extension.
+I’d like to thank Srihari Ganesh and Skyler Wu for their help in reviewing and improving the two-population case; Max Li for his help in optimizing the PMF calculation; and Meghan Short and Kelsey Thompson from the Huttenhower Lab at the Harvard T.H. Chan School of Public Health and the Broad Institute for their help in reviewing the math behind the arbitrary-population-number extension.
 
 # References
