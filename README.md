@@ -1,4 +1,4 @@
-# chyper: Functions for Conditional Hypergeometric Distributions
+# Chyper: Functions for Conditional Hypergeometric Distributions
 
 # Summary
 
