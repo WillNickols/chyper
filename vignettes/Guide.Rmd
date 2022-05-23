@@ -59,12 +59,12 @@ The PMF of a hypergeometric distribution is implemented recursively with the opt
 ## Maximum likelihood estimation
 The likelihood function of a conditional hypergeometric (the product of the observations' PMFs) with respect to the unknown overlap population size $s$ is either 
 
-- Monotonically decreasing from the largest observed overlap if the overlaps are small because the overlapping population must be at least as large as the largest observed overlap but any larger makes it unlikely to see such small observed overlaps.
+- Monotonically decreasing from the largest observed overlap if the overlaps are small because the overlapping population must be at least as large as the largest observed overlap but any larger makes it unlikely to see such small observed overlaps
 - Or unimodal because the optimal value of $s$ is large enough that the samples pick from the overlapping population $s$ rather than the unique populations but not so large that the samples pick different people in the overlapping population
 
 The likelihood function with respect to $n_i$ is 
 
-- Monotonically increasing if there are no observed overlaps (because then the most likely population size is infinite)
+- Monotonically increasing if there are no observed overlaps (because an infinite population size minimizes the chance of drawing from the finite overlapping region)
 - Unimodal if the observed overlaps are positive and moderate because there is an optimal value between a large $n_i$ where large observed overlaps would be unlikely and a low $n_i$ where low observed overlaps would be unlikely
 - Or monotonically decreasing from $m_i-s$ if the observed overlaps are very high because that is the smallest population value that allows the sample to be taken but maximizes the chance that the samples are taken from the overlapping population rather than the unique population
 
@@ -72,7 +72,7 @@ The likelihood function with respect to $m_i$ is
 
 - Monotonically decreasing from the largest observed overlap if the observed overlaps are low because the sample size must be at least as big as the largest observed overlap but any bigger of a sample size makes the low observed overlaps unlikely
 - Unimodal if the observed overlaps are positive and moderate because there is an optimal value between a large $m_i$ where the small observed overlaps would be unlikely and a low (but $\geq$ the maximum observed overlap) $m_i$ where the large observed overlaps would be unlikely
-- Or monotonically increasing but bounded at $s+n_i$ if the observed overlaps are very large because this allows as many overlaps as possible to occur
+- Or monotonically increasing until the likelihood of $s+n_i$ after which it is 0 if the observed overlaps are very large because this allows as many overlaps as possible to occur
 
 However, in all of these cases, there is never a global maximum after the first decrease, so the maximum likelihood estimator functions do the following:
 
