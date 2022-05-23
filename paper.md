@@ -1,5 +1,5 @@
 ---
-title: 'chyper: Functions for Conditional Hypergeometric Distributions'
+title: 'Chyper: Functions for Conditional Hypergeometric Distributions'
 tags:
   - R
   - conditional hypergeometric distributions
