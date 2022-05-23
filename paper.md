@@ -42,7 +42,7 @@ P(X_3=x_3) =& \sum_{x_2}P(X_3=x_3|X_2=x_2)P(X_2=x_2)=\\
 P(X_k=k) =& \sum_{x_{k-1}}P(X_k=k|X_{k-1}=x_{k-1})\Big[\sum_{x_{k-2}}P(X_{k-1}=x_{k-1}|X_{k-2}=x_{k-2})\cdot\Big[...\cdot\\
 &\Big[\sum_{x_1}P(X_2=x_2|X_1=x_1)P(X_1=x_1)\Big]...\Big]\Big]\\
 =& \sum_{x_{k-1}=k}^{\textrm{min}(m_{k-1},s)}\frac{{{x_{k-1}}\choose{k}}{{n_k+s-x_{k-1}}\choose{m_k-k}}}{{{n_{k}+s}\choose{m_k}}}\cdot\Big[\sum_{x_{k-2}=k}^{\textrm{min}(m_{k-2},s)}\frac{{{x_{k-2}}\choose{x_{k-1}}}{{n_{k-1}+s-x_{k-2}}\choose{m_{k-1}-x_{k-1}}}}{{{n_{k-1}+s}\choose{m_{k-1}}}}\cdot\Big[...\cdot\\
-&\Big[\sum_{x_1=k}^{\textrm{min}(m_1,s)}\frac{{{x_1}\choose{k}}{{n_2+s-x_1}\choose{m_2-k}}}{{{n_2+s}\choose{m_2}}}\cdot\frac{{{s}\choose{x_1}}{{n_1}\choose{m_1-x_1}}}{{{n_1+s}\choose{m_1}}}\Big]...\Big]\Big]
+&\Big[\sum_{x_1=k}^{\textrm{min}(m_1,s)}\frac{{{x_1}\choose{x_2}}{{n_2+s-x_1}\choose{m_2-x_2}}}{{{n_2+s}\choose{m_2}}}\cdot\frac{{{s}\choose{x_1}}{{n_1}\choose{m_1-x_1}}}{{{n_1+s}\choose{m_1}}}\Big]...\Big]\Big]
 \end{split}$$
 
 since $P(X_k=k)=0$ if any of $X_{k-1},...,X_1$ are less than $k$.
