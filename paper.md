@@ -45,6 +45,8 @@ P(X_k=k) =& \sum_{x_{k-1}}P(X_k=k|X_{k-1}=x_{k-1})\Big[\sum_{x_{k-2}}P(X_{k-1}=x
 &\Big[\sum_{x_1=k}^{\textrm{min}(m_1,s)}\frac{{{x_1}\choose{k}}{{n_2+s-x_1}\choose{m_2-k}}}{{{n_2+s}\choose{m_2}}}\cdot\frac{{{s}\choose{x_1}}{{n_1}\choose{m_1-x_1}}}{{{n_1+s}\choose{m_1}}}\Big]...\Big]\Big]
 \end{split}$$
 
+since the probability of $P(X_k=k)$ is 0 if any of $X_{k-1},...,X_1$ are less than $k$.
+
 ## Computational optimizations
 Two dynamic programming optimizations speed this computation significantly.  First, calculating this PMF can be optimized by storing all the $P(X_i = x_i)$ at each level because they are the same regardless of any level above them (i.e. $P(X_1 = x_1)$ does not depend on the value of $k$ in $P(X_2=k)$).  Therefore, by storing $P(X_1=x_1)$ for $x_1$ from $0$ to $\textrm{min}(m_1,s)$, $P(X_2=x_2)$ can be computed without needing to recompute anything for the $P(X_1=x_1)$ level.  This can be repeated with the $P(X_2=x_2)$ level versus the $P(X_3=x_3)$ level and so on.  
 
