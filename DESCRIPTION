@@ -3,7 +3,7 @@ Type: Package
 Title: Functions for Conditional Hypergeometric Distributions
 Version: 0.4.0
 Author: William Nickols
-Maintainer: William Nickols <willnickols@college.harvard.edu>
+Maintainer: William Nickols <willanickols@gmail.com>
 Description: An implementation of the probability mass function, cumulative density function, quantile function, random number generator, maximum likelihood estimator, and p-value generator from a conditional hypergeometric distribution: the distribution of how many items are in the overlap of all samples when samples of arbitrary size are each taken without replacement from populations of arbitrary size.
 License: MIT + file LICENSE
 Encoding: UTF-8
