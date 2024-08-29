@@ -3,3 +3,6 @@
 ^doc$
 ^Meta$
 ^\.github$
+paper.bib
+paper.md
+LICENSE.md
